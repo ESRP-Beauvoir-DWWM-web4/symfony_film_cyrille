@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Film{% endblock %}
+
+{% block body %}
+    <h1>Create new Film</h1>
+
+    {{ include('symfony_console_make_migration/_form.html.twig') }}
+
+    <a href="{{ path('app_symfony_console_make_migration_index') }}">back to list</a>
+{% endblock %}

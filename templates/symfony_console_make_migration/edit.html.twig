@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Film{% endblock %}
+
+{% block body %}
+    <h1>Edit Film</h1>
+
+    {{ include('symfony_console_make_migration/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_symfony_console_make_migration_index') }}">back to list</a>
+
+    {{ include('symfony_console_make_migration/_delete_form.html.twig') }}
+{% endblock %}
